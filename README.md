@@ -1,6 +1,6 @@
 # PRÁCTICA 3 (ANTON COBIAN IREGUI)
 
-## 🔔SOLUCIÓN PRÁCTICA 3 ***(Por favor leer)*** 🔔
+## 🔔SOLUCIÓN PRÁCTICA 3 <span style="color: red;"> (Por favor leer)</span> 🔔
 
 <p align="justify"> 
 Para esta práctica se ha desarrollado una página web dinámica que permite al usuario jugar partidas de blackjack contra el dealer.<br>
