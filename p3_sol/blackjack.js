@@ -67,7 +67,7 @@ async function pillarCarta(destino) {
             document.getElementById('puntos_jugador').textContent = `Puntos: ${puntuacion_jugador}`;
             console.log('Puntuación jugador:', puntuacion_jugador);
 
-            if (puntuacion_jugador > 21) {
+            if (puntuacion_jugador >= 21) {
                 resolverJuego();
             }
         } else {
