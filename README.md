@@ -1,6 +1,6 @@
 # PRÁCTICA 3 (ANTON COBIAN IREGUI)
 
-## 🔔SOLUCIÓN PRÁCTICA 3🔔
+## 🔔SOLUCIÓN PRÁCTICA 3 ***(Por favor leer)***🔔
 
 <p align="justify"> 
 Para esta práctica se ha desarrollado una página web dinámica que permite al usuario jugar partidas de blackjack contra el dealer.<br>
@@ -15,7 +15,7 @@ En este proyecto se ha hecho uso de dos apis diferentes para la gestión de los 
 - <a href=https://deckofcardsapi.com/>api_cartas_póker</a>
 - <a href=https://github.com/cheatsnake/emojihub>api_emojis</a>
 
-## EXTRA
+## 🚨EXTRA🚨
 
 Se ha implementado animaciones de repartir cartas y volteralas para desvelarlas. 
 
