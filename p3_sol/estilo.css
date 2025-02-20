@@ -1,0 +1,128 @@
+body {
+    background-color: #2d342d;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.mesa {
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;
+    padding-top: 1px;
+    background-color: #3b6021;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative; /* Necesario para las cartas absolutas */
+}
+
+.cartas {
+    display: flex; 
+    justify-content: center; 
+    gap: 2px; 
+    flex-wrap: wrap; 
+    min-height: 100px;
+    flex-direction: row;
+    margin: auto;
+}
+.display {
+    margin-top: 10px;
+    padding: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.puntos{
+    margin: auto;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#vacile{
+    margin: 10px;
+    font-family: Comic Sans MS;
+    font-size: 40px;
+}
+.dealer img, .jugador img {
+    width: 100px; 
+    height: auto;
+}
+#cartas_jugador, #cartas_dealer {
+    position: relative;
+  }
+
+/* 🔥 Nueva animación de carta */
+.carta {
+    width: 100px;  /* Ajusta según el tamaño de la carta */
+    height: 140px; /* Ajusta según el tamaño de la carta */
+    position: relative;
+    perspective: 1000px; /* Efecto 3D para el volteo */
+  }
+  
+  .carta-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .carta-frente, .carta-detras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .carta-detras {
+    transform: rotateY(180deg);
+  }
+  
+
+.carta-frente {
+    background-image: url('https://deckofcardsapi.com/static/img/back.png'); /* Imagen de carta oculta */
+    background-size: cover;
+}
+
+.carta-detras {
+    transform: rotateY(180deg);
+    background-size: cover;
+}
+
+/* Cuando la carta llega a su destino */
+.posicion-final {
+    position: relative; /* Se ajusta con Flexbox */
+    transform: none;
+    left: 0;
+    top: 0;
+}
+
+.baraja {
+   
+    margin: 5px;
+    padding: 10px;
+}
+
+.controles {
+    margin-top: 20px;
+}
+
+button {
+    background-color: gold;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffd700;
+}
