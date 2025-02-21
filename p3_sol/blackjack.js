@@ -92,7 +92,7 @@ async function resolverJuego() {
     while (puntuacion_dealer < 17) {
         await pillarCarta('dealer');
         puntuacion_dealer = calcularPuntuacion(mano_dealer);
-        console.log('Puntuación dealer:', puntuacion_dealer);
+        
     }
 
     estado_juego = 'finalizado';
