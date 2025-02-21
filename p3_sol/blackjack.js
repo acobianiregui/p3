@@ -9,7 +9,6 @@ async function crearMazo() {
         const response = await fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1');
         const data = await response.json();
         id_mazo = data.deck_id;
-        console.log('Mazo creado y barajado. Deck ID:', id_mazo);
     } catch (error) {
         console.error('Error al crear el mazo:', error);
     }
@@ -36,7 +35,6 @@ async function cartasIniciales() {
     try {
         const response = await fetch(`https://deckofcardsapi.com/api/deck/${id_mazo}/draw/?count=4`);
         const data = await response.json();
-        console.log('Cartas iniciales:', data.cards);
 
         mano_jugador.push(data.cards[0], data.cards[1]);
         await animarCarta(data.cards[0], 'jugador', true);
@@ -65,7 +63,7 @@ async function pillarCarta(destino) {
             await animarCarta(data.cards[0], 'jugador', true);
             const puntuacion_jugador = calcularPuntuacion(mano_jugador);
             document.getElementById('puntos_jugador').textContent = `Puntos: ${puntuacion_jugador}`;
-            console.log('Puntuación jugador:', puntuacion_jugador);
+           
 
             if (puntuacion_jugador >= 21) {
                 resolverJuego();
